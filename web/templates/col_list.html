@@ -1,0 +1,4 @@
+{% for col in cols %}
+<p>{{ col.name }} = {{ col.expression }} (<a href="/col_delete?column_id={{ col.column_id }}">DELETE</a>)</p>
+{% endfor %}
+<a href="/col_add">Add</a>

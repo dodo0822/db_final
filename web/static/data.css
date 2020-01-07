@@ -1,0 +1,16 @@
+* {
+  font-family: sans-serif;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tbody tr:nth-child(odd) {
+  background: #ddd;
+}
+
+
+td, th {
+  padding: 4px;
+}

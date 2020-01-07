@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='data.css') }}">
+</head>
+
+<body>
+
+<table>
+  <thead>
+    <tr>
+      {% for c in cols %}
+        <th>{{ c }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+      <tr>
+        {% for c in r %}
+          <td>{{ c }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
